@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>514</width>
+    <height>565</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Reversi Game</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>514</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="gameMenu">
+    <property name="title">
+     <string>&amp;Gra</string>
+    </property>
+    <addaction name="createNewGame"/>
+    <addaction name="separator"/>
+    <addaction name="quitGame"/>
+   </widget>
+   <widget class="QMenu" name="helpMenu">
+    <property name="title">
+     <string>&amp;Pomoc</string>
+    </property>
+    <addaction name="getInstructions"/>
+   </widget>
+   <addaction name="gameMenu"/>
+   <addaction name="helpMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="createNewGame">
+   <property name="text">
+    <string>&amp;Nowa</string>
+   </property>
+  </action>
+  <action name="quitGame">
+   <property name="text">
+    <string>Za&amp;kończ</string>
+   </property>
+  </action>
+  <action name="getInstructions">
+   <property name="text">
+    <string>&amp;Instrukcja</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>quitGame</sender>
+   <signal>triggered()</signal>
+   <receiver>GameWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>264</x>
+     <y>289</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

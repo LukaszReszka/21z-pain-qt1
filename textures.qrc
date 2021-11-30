@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>dark_field_texture.bmp</file>
+        <file>light_field_texture.bmp</file>
+        <file>white_pawn_texture.bmp</file>
+        <file>black_pawn_texture.bmp</file>
+        <file>logo.png</file>
+    </qresource>
+</RCC>
